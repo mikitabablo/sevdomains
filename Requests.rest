@@ -1,0 +1,28 @@
+
+GET http://localhost:3000/hosts
+
+###
+
+GET http://localhost:3000/hosts/sample
+
+###
+
+POST http://localhost:3000/hosts HTTP/1.1
+content-type: application/json
+
+{
+    "name": "uberland"
+}
+
+###
+
+DELETE http://localhost:3000/hosts/602518ce0c10261c4783d172
+
+###
+
+DELETE http://localhost:3000/hosts
+Content-Type: application/json
+
+{
+    "hostId": "602518ce0c10261c4783d172"
+}
