@@ -1,13 +1,14 @@
+# Use REST Client extension for VS Code to run this requests
 
-GET http://localhost:3000/hosts
-
-###
-
-GET http://localhost:3000/hosts/sample
+GET http://localhost:5000/hosts
 
 ###
 
-POST http://localhost:3000/hosts HTTP/1.1
+GET http://localhost:5000/hosts/sample
+
+###
+
+POST http://localhost:5000/hosts HTTP/1.1
 content-type: application/json
 
 {
@@ -16,11 +17,11 @@ content-type: application/json
 
 ###
 
-DELETE http://localhost:3000/hosts/602518ce0c10261c4783d172
+DELETE http://localhost:5000/hosts/602518ce0c10261c4783d172
 
 ###
 
-DELETE http://localhost:3000/hosts
+DELETE http://localhost:5000/hosts
 Content-Type: application/json
 
 {
